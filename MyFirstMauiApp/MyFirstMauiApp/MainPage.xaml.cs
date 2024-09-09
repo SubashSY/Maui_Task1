@@ -24,6 +24,7 @@
                 if (_entryText != value)
                 {
                     _entryText = value;
+                    OnPropertyChanged();
                     // Update NewLabel when EntryText changes
                 }
             }
@@ -55,7 +56,7 @@
         {
             NewLabel = "Welcome to MAUI"; // Reset to initial text or empty
             LabelColor = Colors.Black;   // Reset to initial color
-            EntryText = string.Empty;    // Clear the entry text
+            EntryText = "";    // Clear the entry text
         }
     }
 
